@@ -1,0 +1,2266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BRT Standard Scorecard</title>
+		<meta charset="utf-8"> 
+		<meta name="description" 
+			  content="Página web para introducir calificaciones a corredores BRT con los criterios del "BRT Standard" elaborado por ITDP"/>
+		<meta name="author" 
+			  content="Jonathan González" />
+		<meta name="keywords" 
+			  content= "Transporte, publico, bicicletas, urbanismo, ITDP, sustentable, Metrobus, Ecobici, Suburbano, programación, app, aplicaciones, moviles, HTML5"/>
+		<link rel="stylesheet" 
+			  type="text/css" 
+			  href="css/estilos.css">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" 
+			  rel="stylesheet">
+   		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+   		<script type="text/javascript"></script>
+
+   		
+
+   			<script>
+   			/*
+			function suma() {
+			var a1 = document.fsuma_a1.alineacion.value //en el DOM esto referencia el valor del primer cuadro
+			var b1 = document.fsuma_b1.exclusivo.value //esto referencia el valor del segundo cuadro
+			var c1 = document.fsuma_c1.tarjeta.value
+			var d1 = document.fsuma_d1.intersecciones.value
+			var e1 = document.fsuma_e1.abordaje.value
+			
+			var a2 = document.fsuma_a2.rutas.value //en el DOM esto referencia el valor del primer cuadro
+			var b2 = document.fsuma_b2.frecuenciaHMD.value //esto referencia el valor del segundo cuadro
+			var c2 = document.fsuma_c2.frecuenciaNoHMD.value
+			var d2 = document.fsuma_d2.express.value
+			var e2 = document.fsuma_e2.control.value
+			var f2 = document.fsuma_f2.topTen.value
+			var g2 = document.fsuma_g2.horarios.value
+			var h2 = document.fsuma_h2.perfilDemanda.value
+			var i2 = document.fsuma_i2.redCorredores.value
+
+			var a3 = document.fsuma_a3.rebase.value //en el DOM esto referencia el valor del primer cuadro
+			var b3 = document.fsuma_b3.emisiones.value //esto referencia el valor del segundo cuadro
+			var c3 = document.fsuma_c3.fareCollection.value
+			var d3 = document.fsuma_d3.estacionesCentro.value
+			var e3 = document.fsuma_e3.pavimento.value
+
+			var a4 = document.fsuma_a4.distanciaEstaciones.value //en el DOM esto referencia el valor del primer cuadro
+			var b4 = document.fsuma_b4.estacionesSeguras.value //esto referencia el valor del segundo cuadro
+			var c4 = document.fsuma_c4.puertas.value
+			var d4 = document.fsuma_d4.bahias.value
+			var e4 = document.fsuma_e4.slidingDoors.value
+
+			var a5 = document.fsuma_a5.marca.value //en el DOM esto referencia el valor del primer cuadro
+			var b5 = document.fsuma_b5.ITS.value //esto referencia el valor del segundo cuadro
+
+			var a6 = document.fsuma_a6.universal.value //en el DOM esto referencia el valor del primer cuadro
+			var b6 = document.fsuma_b6.integracion.value //esto referencia el valor del segundo cuadro
+			var c6 = document.fsuma_c6.peatonal.value
+			var d6 = document.fsuma_d6.biciEstacionamiento.value
+			var e6 = document.fsuma_e6.ciclovias.value			
+			var f6 = document.fsuma_f6.ecobici.value			
+			
+			
+			document.subtotal1.resultado1.value=parseFloat(a1)+parseFloat(b1)+parseFloat(c1)+parseFloat(d1)+parseFloat(e1) //convertimos a números
+			
+			document.subtotal2.resultado2.value=parseFloat(a2)+parseFloat(b2)+parseFloat(c2)+parseFloat(d2)+parseFloat(e2)+parseFloat(f2)+parseFloat(g2)+parseFloat(h2)+parseFloat(i2)
+
+			document.subtotal3.resultado3.value=parseFloat(a3)+parseFloat(b3)+parseFloat(c3)+parseFloat(d3)+parseFloat(e3)
+			document.subtotal4.resultado4.value=parseFloat(a4)+parseFloat(b4)+parseFloat(c4)+parseFloat(d4)+parseFloat(e4)
+			document.subtotal5.resultado5.value=parseFloat(a5)+parseFloat(b5)
+			document.subtotal6.resultado6.value=parseFloat(a6)+parseFloat(b6)+parseFloat(c6)+parseFloat(d6)+parseFloat(e6)+parseFloat(f6)
+			}
+			*/
+			</script>
+			
+
+			<script>
+			function sumar1(){
+				
+				var s1 = document.getElementById("cuadro1").value;
+				var s2 = document.getElementById("cuadro2").value;
+
+				
+				var suma1A = (parseInt(s1) + parseInt(s2));
+
+				document.resultadoSuma1.value = suma1A;
+
+				alert(suma1A);
+				
+				
+
+					
+			}
+			
+			</script>
+
+			<script>
+
+
+			function cambiar1() /* CÓDIGO PARA OCULTAR PANEL DE INFORMACIÓN  */
+				{
+					if(document.getElementById("acordeon1").style.display == 'none')
+					{
+					   document.getElementById("acordeon1").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon1").style.display = 'none';
+						 }
+				}
+			function cambiar2()	
+				{			
+					if(document.getElementById("acordeon2").style.display == 'none')
+					{
+					   document.getElementById("acordeon2").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon2").style.display = 'none';
+						 }				
+				}
+			function cambiar3()	
+				{				
+					if(document.getElementById("acordeon3").style.display == 'none')
+					{
+					   document.getElementById("acordeon3").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon3").style.display = 'none';
+						 }	
+				}	
+			function cambiar4()	
+				{
+					if(document.getElementById("acordeon4").style.display == 'none')
+					{
+					   document.getElementById("acordeon4").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon4").style.display = 'none';
+						 }
+				}
+			function cambiar5()	
+				{
+					if(document.getElementById("acordeon5").style.display == 'none')
+					{
+					   document.getElementById("acordeon5").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon5").style.display = 'none';
+						 }						 
+				}
+			function cambiar6()	
+				{
+					if(document.getElementById("acordeon6").style.display == 'none')
+					{
+					   document.getElementById("acordeon6").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon6").style.display = 'none';
+						 }
+				}
+			function cambiar7()	
+				{
+					if(document.getElementById("acordeon7").style.display == 'none')
+					{
+					   document.getElementById("acordeon7").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon7").style.display = 'none';
+						 }
+				}
+			function cambiar8()	
+				{
+					if(document.getElementById("acordeon8").style.display == 'none')
+					{
+					   document.getElementById("acordeon8").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon8").style.display = 'none';
+						 }
+				}
+			function cambiar9()	
+				{
+					if(document.getElementById("acordeon9").style.display == 'none')
+					{
+					   document.getElementById("acordeon9").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon9").style.display = 'none';
+						 }
+				}								
+			function cambiar10()	
+				{					
+					if(document.getElementById("acordeon10").style.display == 'none')
+					{
+					   document.getElementById("acordeon10").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon10").style.display = 'none';
+						 }				
+				}
+			function cambiar11()	
+				{
+					if(document.getElementById("acordeon11").style.display == 'none')
+					{
+					   document.getElementById("acordeon11").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon11").style.display = 'none';
+						 }						 
+				}
+			function cambiar12()	
+				{
+					if(document.getElementById("acordeon12").style.display == 'none')
+					{
+					   document.getElementById("acordeon12").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon12").style.display = 'none';
+						 }
+				}
+			function cambiar13()	
+				{
+					if(document.getElementById("acordeon13").style.display == 'none')
+					{
+					   document.getElementById("acordeon13").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon13").style.display = 'none';
+						 }						 
+				}
+			function cambiar14()	
+				{
+					if(document.getElementById("acordeon14").style.display == 'none')
+					{
+					   document.getElementById("acordeon14").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon14").style.display = 'none';
+						 }
+				}
+			function cambiar15()	
+				{
+					if(document.getElementById("acordeon15").style.display == 'none')
+					{
+					   document.getElementById("acordeon15").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon15").style.display = 'none';
+						 }
+				}
+			function cambiar16()	
+				{
+					if(document.getElementById("acordeon16").style.display == 'none')
+					{
+					   document.getElementById("acordeon16").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon16").style.display = 'none';
+						 }
+				}
+			function cambiar17()	
+				{
+					if(document.getElementById("acordeon17").style.display == 'none')
+					{
+					   document.getElementById("acordeon17").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon17").style.display = 'none';
+						 }
+				}								
+			function cambiar18()	
+				{
+
+					if(document.getElementById("acordeon18").style.display == 'none')
+					{
+					   document.getElementById("acordeon18").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon18").style.display = 'none';
+						 }				
+				}
+			function cambiar19()	
+				{
+					if(document.getElementById("acordeon19").style.display == 'none')
+					{
+					   document.getElementById("acordeon19").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon19").style.display = 'none';
+						 }						 
+				}
+			function cambiar20()	
+				{
+					if(document.getElementById("acordeon20").style.display == 'none')
+					{
+					   document.getElementById("acordeon20").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon20").style.display = 'none';
+						 }
+				}
+			function cambiar21()	
+				{
+
+					if(document.getElementById("acordeon21").style.display == 'none')
+					{
+					   document.getElementById("acordeon21").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon21").style.display = 'none';
+						 }
+				}
+			function cambiar22()	
+				{
+					if(document.getElementById("acordeon22").style.display == 'none')
+					{
+					   document.getElementById("acordeon22").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon22").style.display = 'none';
+						 }						 
+				}
+			function cambiar23()	
+				{
+					if(document.getElementById("acordeon23").style.display == 'none')
+					{
+					   document.getElementById("acordeon23").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon23").style.display = 'none';
+						 }
+				}
+			function cambiar24()	
+				{
+					if(document.getElementById("acordeon24").style.display == 'none')
+					{
+					   document.getElementById("acordeon24").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon24").style.display = 'none';
+						 }
+				}
+			function cambiar25()	
+				{
+					if(document.getElementById("acordeon25").style.display == 'none')
+					{
+					   document.getElementById("acordeon25").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon25").style.display = 'none';
+						 }
+				}
+			function cambiar26()	
+				{
+					if(document.getElementById("acordeon26").style.display == 'none')
+					{
+					   document.getElementById("acordeon26").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon26").style.display = 'none';
+						 }
+				}
+			function cambiar27()	
+				{					
+					if(document.getElementById("acordeon27").style.display == 'none')
+					{
+					   document.getElementById("acordeon27").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon27").style.display = 'none';
+						 }				
+				}
+			function cambiar28()	
+				{
+					if(document.getElementById("acordeon28").style.display == 'none')
+					{
+					   document.getElementById("acordeon28").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon28").style.display = 'none';
+						 }						 
+				}
+			function cambiar29()	
+				{
+					if(document.getElementById("acordeon29").style.display == 'none')
+					{
+					   document.getElementById("acordeon29").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon29").style.display = 'none';
+						 }
+				}
+			function cambiar30()	
+				{
+					if(document.getElementById("acordeon30").style.display == 'none')
+					{
+					   document.getElementById("acordeon30").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon30").style.display = 'none';
+						 }						 
+				}
+			function cambiar31()	
+				{
+					if(document.getElementById("acordeon31").style.display == 'none')
+					{
+					   document.getElementById("acordeon31").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon31").style.display = 'none';
+						 }
+				}
+			function cambiar32()	
+				{
+					if(document.getElementById("acordeon32").style.display == 'none')
+					{
+					   document.getElementById("acordeon32").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon32").style.display = 'none';
+						 }
+				}
+			function cambiar33()	
+				{
+					if(document.getElementById("acordeon33").style.display == 'none')
+					{
+					   document.getElementById("acordeon33").style.display = 'block';
+					}else{
+					   document.getElementById("acordeon33").style.display = 'none';
+						 }
+				}
+			</script>
+
+			<script>
+				function asignar7_1()
+				{
+					valorActual = document.getElementById("cuadro1");
+					valorActual.setAttribute("value", "7");
+					document.getElementById("cuadro1").appendChild(valorActual);
+				}
+				function asignar4_1()
+				{
+					valorActual = document.getElementById("cuadro1");
+					valorActual.setAttribute("value", "4");
+					document.getElementById("cuadro1").appendChild(valorActual);
+				}	
+				function asignar1_1()
+				{
+					valorActual = document.getElementById("cuadro1");
+					valorActual.setAttribute("value", "1");
+					document.getElementById("cuadro1").appendChild(valorActual);
+				}		
+				function asignar0_1()
+				{
+					valorActual = document.getElementById("cuadro1");
+					valorActual.setAttribute("value", "0");
+					document.getElementById("cuadro1").appendChild(valorActual);
+				}	
+//--------------------------------------------------------------------------------
+				function asignar7_2()
+				{
+					valorActual = document.getElementById("cuadro2");
+					valorActual.setAttribute("value", "7");
+					document.getElementById("cuadro2").appendChild(valorActual);
+				}
+				function asignar6_2()
+				{
+					valorActual = document.getElementById("cuadro2");
+					valorActual.setAttribute("value", "6");
+					document.getElementById("cuadro2").appendChild(valorActual);
+				}	
+				function asignar4_2()
+				{
+					valorActual = document.getElementById("cuadro2");
+					valorActual.setAttribute("value", "4");
+					document.getElementById("cuadro2").appendChild(valorActual);
+				}		
+				function asignar2_2()
+				{
+					valorActual = document.getElementById("cuadro2");
+					valorActual.setAttribute("value", "2");
+					document.getElementById("cuadro2").appendChild(valorActual);
+				}		
+				function asignar1_2()
+				{
+					valorActual = document.getElementById("cuadro2");
+					valorActual.setAttribute("value", "1");
+					document.getElementById("cuadro2").appendChild(valorActual);
+				}	
+//--------------------------------------------------------------------------------
+				function asignar7_3()
+				{
+					valorActual = document.getElementById("cuadro3");
+					valorActual.setAttribute("value", "7");
+					document.getElementById("cuadro3").appendChild(valorActual);
+				}
+				function asignar6_3()
+				{
+					valorActual = document.getElementById("cuadro3");
+					valorActual.setAttribute("value", "6");
+					document.getElementById("cuadro3").appendChild(valorActual);
+				}	
+				function asignar5_3()
+				{
+					valorActual = document.getElementById("cuadro3");
+					valorActual.setAttribute("value", "5");
+					document.getElementById("cuadro3").appendChild(valorActual);
+				}				
+				function asignar4_3()
+				{
+					valorActual = document.getElementById("cuadro3");
+					valorActual.setAttribute("value", "4");
+					document.getElementById("cuadro3").appendChild(valorActual);
+				}
+				function asignar3_3()
+				{
+					valorActual = document.getElementById("cuadro3");
+					valorActual.setAttribute("value", "3");
+					document.getElementById("cuadro3").appendChild(valorActual);
+				}						
+				function asignar2_3()
+				{
+					valorActual = document.getElementById("cuadro3");
+					valorActual.setAttribute("value", "2");
+					document.getElementById("cuadro3").appendChild(valorActual);
+				}		
+				function asignar1_3()
+				{
+					valorActual = document.getElementById("cuadro3");
+					valorActual.setAttribute("value", "1");
+					document.getElementById("cuadro3").appendChild(valorActual);
+				}	
+				function asignar0_3()
+				{
+					valorActual = document.getElementById("cuadro3");
+					valorActual.setAttribute("value", "0");
+					document.getElementById("cuadro3").appendChild(valorActual);
+				}													
+
+
+			</script>
+
+	</head>
+	<body>
+		  
+  		<section id="fondo">
+
+		<nav>
+		</nav>
+
+<!-- ----------------------------------------------------------SECCIÓN 1--> 
+
+		<section id="categoria">
+			<section id="cuadroFondo" class="titulosSecciones">
+				<article>
+					CARACTERÍSTICAS BÁSICAS DE BRT
+				</article>
+
+				<section id="seccion1">
+					<section id="cuadroGris" class= "evaluaciones">
+						<ul>
+							<li>Alineación de carriles 
+								<button onClick="cambiar1()">Más infromación</button>
+							</li>	
+						</ul>
+						<section id="acordeon1" style="display:none">
+							<!---->
+							<section id="puntos">
+								<section>
+									<p class="textoDescripcion-puntos">7 pts: </p> 
+								</section>
+								<section>
+										<button type="button" 
+												onClick="asignar7_1()"
+												>
+												Asignar 7 puntos   
+										</button>
+								</section>
+							</section>
+							<section id="descripcion">
+								<p class="textoDescripcion">Dos carriles para cada sentido 		alineados y dispuestos al centro de una calle de doble sentido
+								</p>
+							</section>	
+							<!---->
+							<section id="puntos">
+								<section>
+									<p class="textoDescripcion-puntos">7 pts:</p>
+								</section>
+								<section>
+										<button type="button" 
+												onClick="asignar7_1()"
+												>
+												Asignar 7 puntos   
+										</button>
+								</section>									
+							</section>
+
+							<section id="descripcion">
+								<p class="textoDescripcion">Corredores exclusivos para 	autobuses 	donde hay un derecho de vía exclusivo y que 									 no tienen tráfico mixto paralelo, 	incluyendo centros de 	tránsito (ej. Bogotá, 									Curitiba, Quito 	y Pereira) y los corredores 	ferroviarios transformados (ej. 										Ciudad del Cabo y Los Ángeles)</p>
+							</section>	
+							<!---->
+							<section id="puntos" >
+								<section>
+									<p class="textoDescripcion-puntos">7 pts:</p>
+								</section>
+								<section>
+										<button type="button" 
+												onClick="asignar7_1()"
+												>
+												Asignar 7 puntos   
+										</button>
+								</section>							
+							</section>
+							<section id="descripcion">
+								<section>
+									<p class="textoDescripcion">Vías exclusivas que corren de 		manera 	adyacente a alguna orilla, como un parque o 	  									 un río, en las cuales hay 	pocas 	intersecciones que causen 	conflicto</p>
+								</section>
+							</section>
+							<!---->	
+							<section id="puntos">
+								<section>
+									<p class="textoDescripcion-puntos">7 pts:</p>
+								</section>
+								<section>
+										<button type="button" 
+												onClick="asignar7_1()"
+												>
+												Asignar 7 puntos   
+										</button>
+								</section>									
+							</section>
+							<section id="descripcion">
+								<p class="textoDescripcion">Dos carriles para cada sentido 		alineados y dispuestos al centro de una calle de 									doble sentido</p>
+							</section>
+							<!---->		
+							<section id="puntos">
+								<section>
+									<p class="textoDescripcion-puntos">7 pts:</p>
+								</section>
+								<section>
+										<button type="button" 
+												onClick="asignar7_1()"
+												>
+												Asignar 7 puntos   
+										</button>
+								</section>									
+							</section>					
+							<section id="descripcion">
+								<p class="textoDescripcion">Vías exclusivas que corren juntas 	en 	ambos sentidos en los carriles laterales de 									 una calle de un solo sentido</p>
+							</section>	
+							<!---->
+							<section id="puntos">
+								<section>
+									<p class="textoDescripcion-puntos">4 pts:</p>
+								</section>
+								<section>
+										<button type="button" 
+												onClick="asignar4_1()"
+												>
+												Asignar 4 puntos   
+										</button>
+								</section>										
+							</section>					
+							<section id="descripcion">
+								<p class="textoDescripcion">Vías exclusivas "detalles"idas —una 		para cada sentido— que se encuentran alineadas al 									 centro de la calle </p>
+							</section>
+							<!---->
+							<section id="puntos">
+								<section>
+									<p class="textoDescripcion-puntos">4 pts:</p>
+								</section>
+								<section>
+										<button type="button" 
+												onClick="asignar4_1()"
+												>
+												Asignar 4 puntos   
+										</button>
+								</section>								
+							</section>		
+							<section id="descripcion">
+								<p class="textoDescripcion">Carriles que están "detalles"idos 	en 	dos pares de un sólo sentido pero alineados a la 									 banqueta </p>
+							</section>	
+							<!---->
+							<section id="puntos">
+								<section>
+									<p class="textoDescripcion-puntos">1 pts:</p>
+								</section>
+								<section>
+										<button type="button" 
+												onClick="asignar1_1()"
+												>
+												Asignar 1 punto   
+										</button>
+								</section>									
+							</section>											
+							<section id="descripcion">
+								<p class="textoDescripcion">Carriles virtuales que funcionan 	por 	medio de segmentos de vía por los que los autobuses 	pueden evitar 	el tráfico en las intersecciones</p>
+							</section>
+							<!---->	
+							<section id="puntos" >
+								<section>
+									<p class="textoDescripcion-puntos">0 pts:</p>
+								</section>
+								<section>
+										<button type="button" 
+												onClick="asignar0_1()"
+												>
+												Asignar 0 puntos   
+										</button>
+								</section>									
+							</section>															
+							<section id="descripcion">
+								<p class="textoDescripcion">Carriles alineados a la banqueta</p>
+							</section>	
+						</section>										
+					</section>
+	
+					<section id="cuadroBlanco" >
+						<section name="fsuma_a1">
+							<input id="cuadro1" name="alineacion" type="input" pattern="[0-7]"   	min="0" max="7" placeholder="0,1,4,7" value="">
+							</input>
+						</section>
+	
+					</section>	
+				</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 2--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Carriles exclusivos y derecho de vía
+							<button onClick="cambiar2()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon2" style="display:none">	
+					<section id="puntos" >
+						<section>
+							<p class="textoDescripcion-puntos">7 pts:</p>
+						</section>	
+						<section>
+								<button type="button" 
+										onClick="asignar7_2()"
+										>
+										Asignar 7 puntos   
+								</button>
+						</section>							
+					</section>
+					<section id="descripcion">
+							<p class="textoDescripcion">Carriles exclusivos que se respetan 	completamente o con una separación física de 							 los carriles en más del 90 % del total del corredor</p>
+					</section>	
+					<section id="puntos" >
+						<section>
+							<p class="textoDescripcion-puntos">6 pts:</p>
+						</section>
+						<section>
+								<button type="button" 
+										onClick="asignar6_2()"
+										>
+										Asignar 7 puntos   
+								</button>
+						</section>							
+					</section>
+					<section id="descripcion">
+							<p class="textoDescripcion">Carriles exclusivos y refuerzo completo 	o segregación física aplicado a más del 75% del total del corredor</p>
+					</section>	
+					<section id="puntos" >
+						<section>
+							<p class="textoDescripcion-puntos">4 pts:</p>
+						</section>	
+						<section>
+								<button type="button" 
+										onClick="asignar4_2()"
+										>
+										Asignar 7 puntos   
+								</button>
+						</section>						
+					</section>
+					<section id="descripcion">
+							<p class="textoDescripcion">Carriles exclusivos que se respetan 	completamente o con una separación física de los carriles en más del 75 % del total del corredor </p>
+					</section>	
+					<section id="puntos" >
+						<section>
+							<p class="textoDescripcion-puntos">2 pts:</p>
+						</section>	
+						<section>
+								<button type="button" 
+										onClick="asignar2_2()"
+										>
+										Asignar 7 puntos   
+								</button>
+						</section>						
+					</section>
+					<section id="descripcion">
+							<p class="textoDescripcion">Carriles exclusivos que sólo están 	delineados o coloreados en el pavimento sin otras medidas para 	garantizar que se respeten en más del 75% del total del corredor</p>
+					</section>		
+					<section id="puntos" >
+						<section>
+							<p class="textoDescripcion-puntos">1 pts:</p>
+						</section>	
+						<section>
+								<button type="button" 
+										onClick="asignar1_2()"
+										>
+										Asignar 7 puntos   
+								</button>
+						</section>						
+					</section>					
+					<section id="descripcion">
+							<p class="textoDescripcion">Carriles exclusivos que sólo están 	delineados o coloreados en el pavimento sin otras medidas para garantizar que se respeten en más del 40% del total del corredor</p>
+					</section>
+				</section>	
+				</section>	
+
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_b1">
+						<input id="cuadro2" name="exclusivo" type="number" pattern="[1-7]"   min="1" max="7" placeholder="1,2,4,6,7">
+					</section>
+				</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 3--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Pago de pasaje anterior al abordaje
+							<button onClick="cambiar3()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon3" style="display:none">					
+					<section id="puntos" >
+						<section>
+							<p class="textoDescripcion-puntos">7 pts:</p>
+						</section>
+						<section>
+								<button type="button" 
+										onClick="asignar7_3()"
+										>
+										Asignar 7 puntos   
+								</button>
+						</section>								
+					</section>
+					<section id="descripcion">
+						<p class="textoDescripcion">100% de las estaciones troncales tienen sistemas de barrera de control anteriores a los autobuses</p>
+					</section>	
+					<section id="puntos" >
+						<section>
+							<p class="textoDescripcion-puntos">6 pts:</p>
+						</section>
+						<section>
+								<button type="button" 
+										onClick="asignar6_3()"
+										>
+										Asignar 6 puntos   
+								</button>
+						</section>							
+					</section>
+					<section id="descripcion">
+						<p class="textoDescripcion">Más del 75% de las estaciones troncales tienen sistemas de barrera de control anteriores a los autobuses</p>
+					</section>	
+					<section id="puntos" >
+						<section>
+							<p class="textoDescripcion-puntos">6 pts:</p>
+						</section>
+						<section>
+								<button type="button" 
+										onClick="asignar6_3()"
+										>
+										Asignar 6 puntos   
+								</button>
+						</section>								
+					</section>
+					<section id="descripcion">
+						<p class="textoDescripcion">Hay sistema de prueba de pago en todas las rutas que se conectan con el corredor troncal</p>
+					</section>	
+					<section id="puntos" >
+						<section>
+							<p class="textoDescripcion-puntos">5 pts:</p>
+						</section>
+						<section>
+								<button type="button" 
+										onClick="asignar5_3()"
+										>
+										Asignar 5 puntos   
+								</button>
+						</section>								
+					</section>
+					<section id="descripcion">
+						<p class="textoDescripcion">Entre el 60% y el 75% de las estaciones troncales tienen sistemas de barrera de control</p>
+					</section>		
+					<section id="puntos" >
+						<section>
+							<p class="textoDescripcion-puntos">4 pts:</p>
+						</section>
+						<section>
+								<button type="button" 
+										onClick="asignar4_3()"
+										>
+										Asignar 4 puntos   
+								</button>
+						</section>								
+					</section>					
+					<section id="descripcion">
+						<p class="textoDescripcion">Entre el 45% y el 60% de las estaciones troncales tienen sistemas de barrera de control</p>
+					</section>	
+					<section id="puntos" >
+						<section>
+							<p class="textoDescripcion-puntos">3 pts:</p>
+						</section>
+						<section>
+								<button type="button" 
+										onClick="asignar3_3()"
+										>
+										Asignar 3 puntos   
+								</button>
+						</section>								
+					</section>					
+					<section id="descripcion">
+						<p class="textoDescripcion">Hay sistema de prueba de pago en algunas de las rutas que se conectan con el corredor troncal</p>
+					</section>
+					<section id="puntos" >
+						<section>
+							<p class="textoDescripcion-puntos">2 pts:</p>
+						</section>
+						<section>
+								<button type="button" 
+										onClick="asignar2_3()"
+										>
+										Asignar 2 puntos   
+								</button>
+						</section>								
+					</section>		
+					<section id="descripcion">
+						<p class="textoDescripcion">Entre el 30% y el 45% de las estaciones troncales tienen sistemas de barrera de control</p>
+					</section>	
+					<section id="puntos" >
+						<section>
+							<p class="textoDescripcion-puntos">1 pts:</p>
+						</section>
+						<section>
+								<button type="button" 
+										onClick="asignar1_3()"
+										>
+										Asignar 1 punto   
+								</button>
+						</section>								
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Entre el 15% y el 30% de las estaciones troncales tienen sistemas de barrera de control</p>
+					</section>	
+					<section id="puntos" >
+						<section>
+							<p class="textoDescripcion-puntos">0 pts:</p>
+						</section>
+						<section>
+								<button type="button" 
+										onClick="asignar0_3()"
+										>
+										Asignar 0 puntos   
+								</button>
+						</section>								
+					</section>																						
+					<section id="descripcion">
+						<p class="textoDescripcion-puntoscion">Menos del 15% de las estaciones troncales tienen sistemas de barrera de control</p>
+					</section>	
+				</section>					
+				</section>	
+
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_c1">
+						<input id="cuadro3" name="tarjeta" type="number" pattern="[0-7]"   min="0" max="7" placeholder="0,1,2,3,4,5,6,7">
+					</section>
+				</section>	
+
+<!-- ----------------------------------------------------------SECCIÓN 4--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Manejo de Intersecciones
+							<button onClick="cambiar4()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon4" style="display:none">					
+					<section id="puntos">
+
+						<p class="textoDescripcion-puntos">6 pts:</p>
+					</section>
+						<section>
+								<button type="button" 
+										onClick="asignar6_4()"
+										>
+										Asignar 6 puntos   
+								</button>
+						</section>						
+					<section id="descripcion">
+						<p class="textoDescripcion">Todas las vueltas a través de los carriles del autobús están prohibidas</p>
+					</section>	
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">5 pts:</p>
+					</section>
+					<section id="descripcion">
+						<p class="textoDescripcion">La mayoría de las vueltas a través de los carriles del autobús están prohibidas</p>
+					</section>		
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">4 pts:</p>
+					</section>					
+					<section id="descripcion">
+						<p class="textoDescripcion">Alrededor de la mitad de las vueltas a través de los carriles del autobús están prohibidas y hay señalización para priorizar</p>
+					</section>	
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">3 pts:</p>
+					</section>					
+					<section id="descripcion">
+						<p class="textoDescripcion">Algunas de las vueltas a través de los carriles del autobús están prohibidas y hay señalización para priorizar</p>
+					</section>
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>		
+					<section id="descripcion">
+						<p class="textoDescripcion">Ninguna de las vueltas a través de los carriles del autobús está prohibida pero hay señalización para priorizar en casi todas o en todas las intersecciones</p>
+					</section>	
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Ninguna de las vueltas a través de los carriles del autobús está prohibida, pero algunas intersecciones dan preferencia señalizada a los autobuses</p>
+					</section>	
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>																						
+					<section id="descripcion">
+						<p class="textoDescripcion">No hay ningún manejo especial de intersecciones</p>
+					</section>
+				</section>		
+				</section>	
+
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_d1">
+						<input name="intersecciones" type="number" pattern="[0-6]"   min="0" max="6" placeholder="0,1,2,3,4,5,6">
+					</section>
+				</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 5--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Abordaje a nivel de plataforma
+							<button onClick="cambiar5()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon5" style="display:none">					
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">6 pts:</p>
+					</section>
+					<section id="descripcion">
+						<p class="textoDescripcion">100% de los autobuses están nivelados con la plataforma; se implementan medidas para reducir el espacio entre la plataforma y el autobús</p>
+					</section>	
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">5 pts:</p>
+					</section>
+					<section id="descripcion">
+						<p class="textoDescripcion">80% de los autobuses están nivelados con la plataforma; se implementan medidas para reducir el espacio entre la plataforma y el autobús</p>
+					</section>	
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">4 pts:</p>
+					</section>
+					<section id="descripcion">
+						<p class="textoDescripcion">60% de los autobuses están nivelados con la plataforma; se implementan medidas para reducir el espacio entre la plataforma y el autobús</p>
+					</section>	
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">4 pts:</p>
+					</section>
+					<section id="descripcion">
+						<p class="textoDescripcion">100% de los autobuses están nivelados con la plataforma pero no hay ninguna medida para disminuir el ancho de la distancia entre el autobús y la plataforma</p>
+					</section>		
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">3 pts:</p>
+					</section>					
+					<section id="descripcion">
+						<p class="textoDescripcion">40% de los autobuses</p>
+					</section>	
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>					
+					<section id="descripcion">
+						<p class="textoDescripcion">20% de los autobuses</p>
+					</section>
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>		
+					<section id="descripcion">
+						<p class="textoDescripcion">10% de los autobuses</p>
+					</section>	
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Abordaje desnivelado</p>
+					</section>	
+				</section>
+
+				</section>	
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_e1">
+						<input name="abordaje" type="number" pattern="[0-6]"   min="0" max="6" placeholder="0,1,2,3,4,5,6">
+					</section>
+				</section>
+			<br></br>								
+			</section>
+			<br></br>
+<!-- ----------------------------------------------------------Boton Sumar--> 
+
+			<section id="cuadro-sumar">
+				<section class="titulosSecciones">
+
+					<section name="subtotal1">
+						<input type="button" name="Suma" value="Sumar"  onClick="sumar1()">
+						<input id="resultadoSuma1" type="text" name="resultado1" readonly="true" value="">	
+					</section>
+				</section>					
+			</section>
+		</section>
+
+
+
+<!-- ----------------------------------------------------------SECCIÓN 6--> 
+				<br></br>
+
+
+		<section id="categoria">
+			<section id="cuadroFondo" class="titulosSecciones">
+				<article>
+					PLANEACIÓN DEL SERVICIO
+				</article>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Rutas múltiples
+							<button onClick="cambiar6()">Más infromación</button>
+						</li>	
+					</ul>
+				<section id="acordeon6" style="display:none">					
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">4 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">En el corredor existen dos o más rutas que atienden por lo menos a dos estaciones</p>
+					</section>
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">No hay rutas múltiples</p>
+					</section>					
+				</section>
+				</section>
+
+				<section id="cuadroBlanco" >
+					<section name="fsuma_a2">
+						<input name="rutas" type="number" pattern="[0-4]"   min="0" max="4" placeholder="0,4">
+					</section>
+				</section>	
+
+<!-- ----------------------------------------------------------SECCIÓN 7--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Frecuencia en hora pico
+							<button onClick="cambiar7()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon7" style="display:none">					
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">3 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">100% tienen cuando menos 8 autobuses por hora</p>
+					</section>
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">75% tienen cuando menos 8 autobuses por hora</p>
+					</section>
+					<section id="puntos" >
+
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">50% tienen cuando menos 8 autobuses por hora</p>
+					</section>
+					<section id="puntos" >
+
+						<p class="textoDesc
+						ripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">< 25% tienen cuando menos 8 autobuses por hora</p>
+					</section>										
+				</section>	
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_b2">
+						<input name="frecuenciaHMD" type="number" pattern="[0-3]"   min="0" max="3" placeholder="0,1,2,3">
+					</section>
+				</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 8--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Frecuencia en hora no pico
+							<button onClick="cambiar8()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon8" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">100% de las rutas tienen cuando menos 4 autobuses por hora</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">60% de las rutas tienen cuando menos 4 autobuses por hora</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">< 35% de las rutas tienen cuando menos 4 autobuses por hora</p>
+					</section>
+				</section>							
+				</section>	
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_c2">
+						<input name="frecuenciaNoHMD" type="number" pattern="[0-2]"   min="0" max="2" placeholder="0,1,2">
+					</section>
+				</section>			
+
+<!-- ----------------------------------------------------------SECCIÓN 9--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Servicios locales, directos y limitados
+							<button onClick="cambiar9()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon9" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">3 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Servicios locales y múltiples tipos de servicios limitados y directos</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Cuando menos un servicio local y uno limitado o directo</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Sin servicios limitados o directos</p>
+					</section>						
+				</section>
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_d2">
+						<input name="express" type="number" pattern="[0-3]"   min="0" max="3" placeholder="0,2,3">
+					</section>
+				</section>
+				
+
+<!-- ----------------------------------------------------------SECCIÓN 10--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Centro de control
+							<button onClick="cambiar10()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon10" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">3 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Centro de control con todos los servicios</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Centro de control con la mayoría de los servicios</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Centro de control con algunos servicios</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Sin centro de control</p>
+					</section>						
+				</section>
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_e2">
+						<input name="control" type="number" pattern="[0-3]"   min="0" max="3" placeholder="0,1,2,3">
+					</section>
+				</section>
+				
+
+<!-- ----------------------------------------------------------SECCIÓN 11--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Presencia en los 10 corredores principales
+							<button onClick="cambiar11()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon11" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Está entre los 10 corredores de mayor demanda</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">No está entre los 10 corredores de mayor demanda</p>
+					</section>					
+				</section>	
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_f2">
+						<input name="topTen" type="number" pattern="[0-2]"   min="0" max="2" placeholder="0,2">
+					</section>
+				</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 12--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Horas de operación
+							<button onClick="cambiar12()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon12" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Servicio nocturno y de fin de semana</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Únicamente hay servicio nocturno o de fin de semana</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">No hay ni servicio nocturno ni de fin de semana</p>
+					</section>					
+				</section>
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_g2">
+						<input name="horarios" type="number" pattern="[0-2]"   min="0" max="2" placeholder="0,1,2">
+					</section>
+				</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 13--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Perfil de demanda
+							<button onClick="cambiar13()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon13" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">3 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">El corredor incluye el segmento de mayor demanda</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">El corredor no incluye el segmento de mayor demanda</p>
+					</section>						
+				</section>	
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_h2">
+						<input name="perfilDemanda" type="number" pattern="[0-3]"   min="0" max="3" placeholder="0,3">
+					</section>
+				</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 14--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Red de corredores múltiples
+							<button onClick="cambiar14()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon14" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Intersecciones o conexiones con una red BRT potencial o existente</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Parte de, pero sin conexión a, una red BRT existente o planeada</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">No está planeada ni construida una red BRT</p>
+					</section>						
+				</section>	
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_i2">
+						<input name="redCorredores" type="number" pattern="[0-2]"   min="0" max="2" placeholder="0,1,2">
+					</section>
+				</section>
+								
+			<br></br>								
+			</section>
+			<br></br>
+<!-- ---------------------------------------------------------- BOTON SUMAR-->
+
+			<section id="cuadro-sumar">
+				<section>
+
+					<section name="subtotal2">
+						<input type="button" name="Suma" value="Sumar"  onClick="suma()">
+						<input type="text" name="resultado2" readonly="true">	
+					</section>
+				</section>					
+			</section>
+		</section>
+
+
+
+
+
+<!-- ----------------------------------------------------------SECCIÓN 15--> 
+				<br></br>
+
+		<section id="categoria">
+			<section id="cuadroFondo" class="titulosSecciones">
+				<article>
+					INFRAESTRUCTURA
+				</article>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Carriles de rabase en estaciones
+							<button onClick="cambiar15()">Más infromación</button>
+						</li>	
+					</ul>
+				<section id="acordeon15" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">4 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Carriles de rebase exclusivos y delimitados físicamente</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Carriles de rebase exclusivos que no están delimitados</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Sin carriles de rebase</p>
+					</section>					
+				</section>
+				</section>
+
+				<section id="cuadroBlanco" >
+					<section name="fsuma_a3">
+						<input name="rebase" type="number" pattern="[0-4]"   min="0" max="4" placeholder="0,2,4">
+					</section>
+				</section>	
+
+<!-- ----------------------------------------------------------SECCIÓN 16--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Minimización de emisiones de autobuses
+							<button onClick="cambiar16()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon16" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">3 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Euro VI o EE.UU. 2010</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Euro IV o V con filtros de MP o EE.UU. 2007</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Euro IV o V o Euro III CNG o filtro de MP actualizado y verificado</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Anterior o inferior a Euro IV o V</p>
+					</section>						
+				</section>	
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_b3">
+						<input name="emisiones" type="number" pattern="[0-3]"   min="0" max="3" placeholder="0,1,2,3">
+					</section>
+				</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 17--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Estaciones que no estorban con intersecciones
+							<button onClick="cambiar17()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon17" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">3 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">100% de las estaciones troncales cumplen, cuando menos, con uno de estos requerimientos:
+							<li class="centrar">Alejadas por lo menos 40 metros (120 pies) de la intersección</li>
+							<li class="centrar">Carriles exclusivos sin intersecciones</li>
+							<li class="centrar">Intersecciones a desnivel</li>
+							<li class="centrar">Estaciones cerca de la intersección debido a la corta longitud de la cuadra (en el centro las cuadras
+								suelen ser más cortas)</li>
+						</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">65% de las estaciones troncales cumplen con el criterio anterior</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">35% de las estaciones troncales cumplen con el criterio anterior</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">< 35% de las estaciones troncales cumplen con el criterio anterior</p>
+					</section>						
+				</section>
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_c3">
+						<input name="fareCollection" type="number" pattern="[0-3]"   min="0" max="3" placeholder="0,1,2,3">
+					</section>
+				</section>	
+
+<!-- ----------------------------------------------------------SECCIÓN 18--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Estaciones en el centro
+							<button onClick="cambiar18()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon18" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">80% o más de las estaciones troncales tienen plataformas centrales que atienden en ambas direcciones</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">50% de las estaciones troncales</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">< 20% de las estaciones troncales</p>
+					</section>						
+				</section>	
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_d3">
+						<input name="estacionesCentro" type="number" pattern="[0-2]"   min="0" max="2" placeholder="0,1,2">
+					</section>
+				</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 19--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Calidad del pavimento
+							<button onClick="cambiar19()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon19" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Nuevo concreto reforzado en todo el corredor, diseñado para durar 15 años o más</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Nuevo concreto reforzado sólo en las estaciones, diseñado para durar 15 años o más</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Pavimento con una expectativa de vida menor a 15 años</p>
+					</section>					
+				</section>	
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_e3">
+						<input name="pavimento" type="number" pattern="[0-2]"   min="0" max="2" placeholder="0,1,2">
+					</section>
+				</section>
+								
+			<br></br>								
+			</section>
+			<br></br>
+<!-- ---------------------------------------------------------- BOTON SUMAR-->
+
+			<section id="cuadro-sumar">
+				<section  class="titulosSecciones">
+
+					<section name="subtotal3">
+						<input type="button" name="Suma" value="Sumar"  onClick="suma()">
+						<input type="text" name="resultado3" readonly="true">	
+				</section>
+				</section>					
+			</section>
+		</section>
+
+
+
+
+
+<!-- ----------------------------------------------------------SECCIÓN 20--> 
+				<br></br>
+
+		<section id="categoria">
+			<section id="cuadroFondo" class="titulosSecciones">
+				<article>
+					DISEÑO DE LA ESTACIÓN E INTERFAZ DE LA ESTACIÓN-AUTOBÚS
+				</article>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Distancia entre estaciones
+							<button onClick="cambiar20()">Más infromación</button>
+						</li>	
+					</ul>
+				<section id="acordeon20" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Las estaciones están separadas entre 0.3 km (0.2 millas) y 0.8 km (0.5 millas)</p>
+					</section>						
+				</section>
+				</section>
+
+
+				<section id="cuadroBlanco" >
+					<section name="fsuma_a4">
+						<input name="distanciaEstaciones" type="number" pattern="[0-2]"   min="0" max="2" placeholder="0,2">
+					</section>
+				</section>	
+
+<!-- ----------------------------------------------------------SECCIÓN 21--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Estaciones seguras y cómodas
+							<button onClick="cambiar21()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon21" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">3 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Todas las estaciones del corredor troncal son amplias, atractivas y protegen del clima
+						</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">La mayoría de las estaciones del corredor troncal son amplias, atractivas y protegen del clima</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Algunas de las estaciones del corredor troncal son amplias, atractivas y protegen del clima</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Algunas de las estaciones del corredor troncal son amplias, atractivas y protegen del clima</p>
+					</section>						
+				</section>	
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_b4">
+						<input name="estacionesSeguras" type="number" pattern="[0-3]"   min="0" max="3" placeholder="0,1,2,3">
+					</section>
+				</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 22--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Número de puertas por autobús
+							<button onClick="cambiar22()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon22" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">3 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">100%</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">65%</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">35%</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">< 35%</p>
+					</section>						
+				</section>	
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_c4">
+						<input name="puertas" type="number" pattern="[0-3]"   min="0" max="3" placeholder="0,1,2,3">
+					</section>
+				</section>	
+
+<!-- ----------------------------------------------------------SECCIÓN 23--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Bahías y paradas secundarias
+							<button onClick="cambiar23()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon23" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Por lo menos dos paradas secundarias o bahías en las estaciones de mayor demanda</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Menos de dos paradas secundarias o bahías en las estaciones de mayor demanda</p>
+					</section>						
+				</section>	
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_d4">
+						<input name="bahias" type="number" pattern="[0-1]"   min="0" max="1" placeholder="0,1">
+					</section>
+				</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 24--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Puertas corredizas en las estaciones de BRT
+							<button onClick="cambiar24()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon24" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Todas las estaciones tienen puertas corredizas</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Cualquier otra opción</p>
+					</section>						
+				</section>	
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_e4">
+						<input name="slidingDoors" type="number" pattern="[0-1]"   min="0" max="1" placeholder="0,1">
+					</section>
+				</section>
+								
+			<br></br>								
+			</section>
+			<br></br>
+<!-- ---------------------------------------------------------- BOTON SUMAR-->
+
+			<section id="cuadro-sumar">
+				<section  class="titulosSecciones">
+	
+					<section name="subtotal4">
+						<input type="button" name="Suma" value="Sumar"  onClick="suma()">
+						<input type="text" name="resultado4" readonly="true">	
+					</section>
+				</section>					
+			</section>
+		</section>
+
+
+<!-- ----------------------------------------------------------SECCIÓN 25--> 
+				<br></br>
+
+		<section id="categoria">
+			<section id="cuadroFondo" class="titulosSecciones">
+				<article>
+					CALIDAD DE SERVICIO Y DE LOS SISTEMAS DE INFORMACIÓN PARA PASAJEROS
+				</article>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Creación de marca
+							<button onClick="cambiar25()">Más infromación</button>
+						</li>	
+					</ul>
+				<section id="acordeon25" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">3 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Todos los autobuses, rutas y estaciones en el corredor se identifican con una misma marca característica de todo el sistema BRT</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Todos los autobuses, rutas y estaciones en el corredor se identifican con una misma marca, pero es diferente al resto del sistema BRT</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Algunos autobuses, rutas y estaciones en el corredor se identifican con una marca sin tomar en cuenta al resto del sistema</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">No se ha creado ninguna marca</p>
+					</section>						
+				</section>
+				</section>
+
+				<section id="cuadroBlanco" >
+					<section name="fsuma_a5">
+						<input name="marca" type="number" pattern="[0-3]"   min="0" max="3" placeholder="0,1,2,3">
+					</section>
+				</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 26--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Información a pasajeros
+							<button onClick="cambiar26()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon26" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Información estática y en tiempo real en todo el corredor (en estaciones y autobuses)</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Información moderada para pasajeros (estática o en tiempo real)</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Información pobre o inexistente para pasajeros</p>
+					</section>						
+				</section>
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_b5">
+						<input name="ITS" type="number" pattern="[0-2]"   min="0" max="2" placeholder="0,1,2">
+					</section>
+				</section>
+
+			<br></br>								
+			</section>
+			<br></br>
+<!-- ---------------------------------------------------------- BOTON SUMAR-->
+
+			<section id="cuadro-sumar">
+				<section  class="titulosSecciones">
+	
+					<section name="subtotal5">
+						<input type="button" name="Suma" value="Sumar"  onClick="suma()">
+						<input type="text" name="resultado5" readonly="true">	
+					</section>
+				</section>					
+			</section>
+		</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 27--> 
+				<br></br>		
+
+		<section id="categoria">
+			<section id="cuadroFondo" class="titulosSecciones">
+				<article>
+					INTEGRACIÓN Y ACCESO
+				</article>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Acceso universal
+							<button onClick="cambiar27()">Más infromación</button>
+						</li>	
+					</ul>
+				<section id="acordeon27" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">3 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Accesibilidad total en todas las estaciones y vehículos</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Accesibilidad parcial en todas las estaciones y vehículos</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Accesibilidad total o parcial en algunas estaciones y vehículos</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">El corredor no tiene accesibilidad universal</p>
+					</section>						
+				</section>
+				</section>
+
+				<section id="cuadroBlanco" >
+					<section name="fsuma_a6">
+						<input name="universal" type="number" pattern="[0-3]"   min="0" max="3" placeholder="0,1,2,3">
+					</section>
+				</section>	
+
+<!-- ----------------------------------------------------------SECCIÓN 28--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Integración con otros transportes públicos
+							<button onClick="cambiar28()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon28" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">3 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Integración del diseño físico, el pago de tarifas y los sistemas de información</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Integración de dos de las siguientes: diseño físico, pago de tarifas o sistemas de información</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Integración de una de las siguientes: diseño físico, pago de tarifas o sistemas de información</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Sin integración</p>
+					</section>							
+				</section>	
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_b6">
+						<input name="integracion" type="number" pattern="[0-3]"   min="0" max="3" placeholder="0,1,2,3">
+					</section>
+				</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 29--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Acceso peatonal
+							<button onClick="cambiar29()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon29" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">3 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Hay un acceso peatonal bueno y seguro en cada estación y en un área de 500 metros alrededor del corredor</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Hay un acceso peatonal bueno y seguro en cada estación y múltiples mejoras a lo largo del corredor</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Hay un acceso peatonal bueno y seguro en cada estación y algunas mejoras a lo largo del corredor</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">No todas las estaciones tienen accesos peatonales buenos y seguros, y hay pocas mejoras a lo largo del corredor</p>
+					</section>						
+				</section>
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_c6">
+						<input name="peatonal" type="number" pattern="[0-3]"   min="0" max="3" placeholder="0,1,2,3">
+					</section>
+				</section>	
+
+<!-- ----------------------------------------------------------SECCIÓN 30--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Estacionamiento seguro para bicicletas
+							<button onClick="cambiar30()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon30" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Estacionamiento seguro para bicicletas por lo menos en las estaciones terminales, y racks para bicicletas en otros lugares</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Racks para bicicletas en la mayoría de las estaciones</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Con pocos o nulos estacionamientos para bicicletas</p>
+					</section>						
+				</section>	
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_d6">
+						<input name="biciEstacionamiento" type="number" pattern="[0-2]"   min="0" max="2" placeholder="0,1,2">
+					</section>
+				</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 31--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Carriles para bicicletas
+							<button onClick="cambiar31()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon31" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">2 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Carriles de bicicletas en o paralelas al corredor completo</p>
+					</section>
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Los carriles para bicicletas no abarcan el corredor completo</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Sin infraestructura para bicicletas</p>
+					</section>						
+				</section>	
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_e6">
+						<input name="ciclovias" type="number" pattern="[0-2]"   min="0" max="2" placeholder="0,1,2">
+					</section>
+				</section>
+
+<!-- ----------------------------------------------------------SECCIÓN 32--> 
+				<br></br>
+
+				<section id="cuadroGris" class= "evaluaciones">
+					<ul>
+						<li>Integración con sistemas de préstamos de bicicletas
+							<button onClick="cambiar32()">Más infromación</button>
+						</li>
+					</ul>
+				<section id="acordeon32" style="display:none">					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">1 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Sistema de préstamo de bicicletas en al menos 50% de las estaciones troncales</p>
+					</section>					
+					<section id="puntos" >
+						<p class="textoDescripcion-puntos">0 pts:</p>
+					</section>											
+					<section id="descripcion">
+						<p class="textoDescripcion">Sistema de préstamo de bicicletas en menos del 50% de las estaciones troncales</p>
+					</section>						
+				</section>	
+				</section>
+
+				<section id="cuadroBlanco">
+					<section name="fsuma_f6">
+						<input name="ecobici" type="number" pattern="[0-1]"   min="0" max="1" placeholder="0,1">
+					</section>
+				</section>
+								
+			<br></br>								
+			</section>
+			<br></br>
+<!-- ---------------------------------------------------------- BOTON SUMAR-->
+
+			<section id="cuadro-sumar">
+				<section  class="titulosSecciones">
+	
+					<section name="subtotal6">
+						<input type="button" name="Suma" value="Sumar"  onClick="suma()">
+						<input type="text" name="resultado6" readonly="true">	
+					</section>
+				</section>					
+			</section>
+		</section>
+
+		<footer>
+		</footer>
+		</section>
+	</body>
+
+</html>
